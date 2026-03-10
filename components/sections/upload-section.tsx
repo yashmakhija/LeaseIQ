@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { FileUp, CheckCircle2, AlertCircle } from "lucide-react";
 import { UploadZone } from "@/components/upload-zone";
@@ -21,8 +21,8 @@ export function UploadSection() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const handleExtract = async () => {
-    if (!file) return;
+  const handleExtract = useCallback(async () => {
+    if (!file || isLoading) return;
     setIsLoading(true);
     setError(null);
 
@@ -44,7 +44,16 @@ export function UploadSection() {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [file, isLoading, router]);
+
+  /* Keyboard shortcut: Enter to extract when file is ready */
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Enter" && file && !isLoading) handleExtract();
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [file, isLoading, handleExtract]);
 
   return (
     <section id="upload" className="w-full border-b relative overflow-hidden">

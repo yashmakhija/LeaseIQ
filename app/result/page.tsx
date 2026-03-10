@@ -101,7 +101,7 @@ function ResultContent() {
   return (
     <div className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
       <div className="mx-auto max-w-4xl space-y-6">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 rounded-2xl border border-sky-100/80 bg-white px-6 py-4 shadow-lg glow-sm">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 rounded-2xl border border-sky-100/80 bg-white px-6 py-4 shadow-lg glow-sm animate-fade-in-up">
           <div className="flex items-center gap-4">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-linear-to-br from-sky-100 to-blue-50 border border-sky-200/40 shadow-sm">
               <FileText className="h-5 w-5 text-sky-600" />

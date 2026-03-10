@@ -60,7 +60,7 @@ export function LeaseResults({ data }: LeaseResultsProps) {
   const confidence = getConfidenceMeta(data.confidenceScore);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: "150ms" }}>
       <Alert variant="success">
         <CheckCircle className="h-4 w-4" />
         <AlertTitle>Extraction Complete</AlertTitle>

@@ -13,7 +13,7 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 py-16 md:py-24">
 
           <div className="flex flex-col justify-center gap-7">
-            <div className="flex items-center gap-2.5 w-fit rounded-full border border-sky-200/60 bg-white/70 backdrop-blur-sm px-4 py-1.5 shadow-xs">
+            <div className="flex items-center gap-2.5 w-fit rounded-full border border-sky-200/60 bg-white/70 backdrop-blur-sm px-4 py-1.5 shadow-xs animate-fade-in-up">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-sky-500" />
@@ -23,7 +23,7 @@ export function HeroSection() {
               </span>
             </div>
 
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-[3.25rem] leading-[1.08]">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl lg:text-[3.25rem] leading-[1.08] animate-fade-in-up" style={{ animationDelay: "100ms" }}>
               Stop reading leases.
               <br />
               <span className="gradient-text bg-linear-to-r from-sky-500 via-blue-500 to-sky-600">
@@ -31,19 +31,23 @@ export function HeroSection() {
               </span>
             </h1>
 
-            <p className="text-base text-muted-foreground max-w-md leading-relaxed">
+            <p className="text-base text-muted-foreground max-w-md leading-relaxed animate-fade-in-up" style={{ animationDelay: "200ms" }}>
               Upload a commercial lease PDF and get structured key terms, 
               dates, and financials in seconds — not hours.
             </p>
 
-            <div className="flex flex-wrap items-center gap-3 pt-1">
-              <Button variant="gradient" size="lg" className="gap-2 shadow-md glow-sm">
-                Start Extracting
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-              <Button variant="outline" size="lg" className="bg-white/60 backdrop-blur-sm">
-                See How It Works
-              </Button>
+            <div className="flex flex-wrap items-center gap-3 pt-1 animate-fade-in-up" style={{ animationDelay: "300ms" }}>
+              <a href="#upload">
+                <Button variant="gradient" size="lg" className="cursor-pointer gap-2 shadow-md glow-sm">
+                  Start Extracting
+                  <ArrowRight className="h-4 w-4" />
+                </Button>
+              </a>
+              <a href="#features">
+                <Button variant="outline" size="lg" className="cursor-pointer bg-white/60 backdrop-blur-sm">
+                  See How It Works
+                </Button>
+              </a>
             </div>
 
             <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-3">
@@ -62,7 +66,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="hidden lg:flex items-center justify-center">
+          <div className="hidden lg:flex items-center justify-center animate-slide-in-right" style={{ animationDelay: "200ms" }}>
             <div className="relative w-full max-w-sm">
               <div className="absolute -top-8 -right-8 h-80 w-80 rounded-full bg-sky-200/30 blur-3xl" />
               <div className="absolute -bottom-10 -left-10 h-56 w-56 rounded-full bg-blue-100/40 blur-3xl" />
