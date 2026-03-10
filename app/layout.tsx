@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "LeaseIQ — Lease Intelligence",
+  title: "Lease Extractor — Lease Intelligence",
   description:
     "AI-powered lease data extraction. Upload a lease PDF and get structured data in seconds.",
 };

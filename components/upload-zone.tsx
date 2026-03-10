@@ -112,7 +112,7 @@ export function UploadZone({ file, onFileSelect, disabled }: UploadZoneProps) {
         />
 
         {file ? (
-          /* ── File selected state ── */
+
           <div className="flex items-center gap-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-br from-sky-100 to-blue-50 border border-sky-200/40 shadow-sm">
               <FileText className="h-6 w-6 text-sky-600" />
@@ -128,13 +128,13 @@ export function UploadZone({ file, onFileSelect, disabled }: UploadZoneProps) {
             <button
               type="button"
               onClick={handleRemove}
-              className="ml-2 flex h-8 w-8 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
+              className="ml-2 flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
             >
               <X className="h-4 w-4" />
             </button>
           </div>
         ) : (
-          /* ── Empty / dragging state ── */
+
           <>
             <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-linear-to-br from-sky-100 to-blue-50 border border-sky-200/40 shadow-sm transition-transform duration-300 group-hover:scale-105">
               <FileUp className="h-7 w-7 text-sky-500" />

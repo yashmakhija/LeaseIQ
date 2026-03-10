@@ -11,28 +11,22 @@ export function Navbar() {
             <span className="text-sm font-bold text-white leading-none">L</span>
           </div>
           <span className="text-lg font-semibold tracking-tight">
-            Lease<span className="text-sky-600">IQ</span>
+            Lease<span className="text-sky-600">Extractor</span>
           </span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
           <a
             href="#features"
-            className="relative text-sm font-medium text-muted-foreground transition-colors hover:text-foreground after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full"
+            className="relative cursor-pointer text-sm font-medium text-muted-foreground transition-colors hover:text-foreground after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full"
           >
             Features
           </a>
           <a
             href="#upload"
-            className="relative text-sm font-medium text-muted-foreground transition-colors hover:text-foreground after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full"
+            className="relative cursor-pointer text-sm font-medium text-muted-foreground transition-colors hover:text-foreground after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full"
           >
             Upload
-          </a>
-          <a
-            href="#pricing"
-            className="relative text-sm font-medium text-muted-foreground transition-colors hover:text-foreground after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full"
-          >
-            Pricing
           </a>
         </div>
 

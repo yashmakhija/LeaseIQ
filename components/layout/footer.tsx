@@ -8,11 +8,11 @@ export function Footer() {
               <span className="text-[10px] font-bold text-white leading-none">L</span>
             </div>
             <span className="text-sm font-semibold tracking-tight">
-              Lease<span className="text-sky-600">IQ</span>
+              Lease<span className="text-sky-600">Extractor</span>
             </span>
           </a>
           <span className="text-xs text-muted-foreground">
-            &copy; 2026 LeaseIQ. All rights reserved.
+            &copy; 2026 Lease Extractor. All rights reserved.
           </span>
         </div>
         <div className="flex gap-6">
@@ -20,7 +20,7 @@ export function Footer() {
             <a
               key={link}
               href="#"
-              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+              className="cursor-pointer text-xs text-muted-foreground hover:text-foreground transition-colors"
             >
               {link}
             </a>
