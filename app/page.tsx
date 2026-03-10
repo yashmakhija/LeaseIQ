@@ -5,10 +5,12 @@ import { Footer } from "@/components/layout/footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="flex min-h-screen flex-col bg-background text-foreground">
       <Navbar />
-      <HeroSection />
-      <UploadSection />
+      <main className="flex-1">
+        <HeroSection />
+        <UploadSection />
+      </main>
       <Footer />
     </div>
   );
