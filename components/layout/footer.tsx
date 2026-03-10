@@ -1,0 +1,32 @@
+export function Footer() {
+  return (
+    <footer className="border-t bg-linear-to-b from-transparent to-sky-50/20">
+      <div className="wrapper py-8 flex flex-col md:flex-row gap-6 justify-between items-center">
+        <div className="flex items-center gap-6">
+          <a href="#" className="flex items-center gap-2.5">
+            <div className="flex h-6 w-6 items-center justify-center rounded-md bg-linear-to-br from-sky-400 to-blue-600">
+              <span className="text-[10px] font-bold text-white leading-none">L</span>
+            </div>
+            <span className="text-sm font-semibold tracking-tight">
+              Lease<span className="text-sky-600">IQ</span>
+            </span>
+          </a>
+          <span className="text-xs text-muted-foreground">
+            &copy; 2026 LeaseIQ. All rights reserved.
+          </span>
+        </div>
+        <div className="flex gap-6">
+          {["Privacy", "Terms", "Contact"].map((link) => (
+            <a
+              key={link}
+              href="#"
+              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {link}
+            </a>
+          ))}
+        </div>
+      </div>
+    </footer>
+  );
+}
